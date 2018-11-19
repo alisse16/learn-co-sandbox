@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Tables and forms</title>  
+  </head>
+  <body>
+<table>
+<tr>
+  <th>name</th>
+  <th>date</th>
+  </tr>
+  <tr>
+    <td>alisse</td>
+    <td>9/20</td>
+    </tr>
+</table>
+<!-- forms, iframes, html5 semantic elements (audio, video -->
+
+<form method="get" action="./page-to-go-to-when-submitting.html">
+  <!-- action is where you redirect them when they click submit--> 
+ <label for="firstname">first name:</label>
+  <input id="firstname" name="firstname" type="text" placeholder="Enter your name...." required>
+  
+  <label for="description">description</label>
+  <textarea id="description">Description</textarea>
+  
+  <label for="checkbox">Checkbox</label>
+  <input type="checkbox">
+  
+  <label for="phone">Phone</label>
+  <input type="tel">
+  
+  <label for="email">Email</label>
+  <input id="email" type="email">
+  <!-- type for diff inputs will cause a specific dropdown -->
+  
+  <label>Option 1</label>
+  <input type=radio name=options>
+   <label>Option 2</label>
+  <input type=radio name=options>
+  <!-- the name attribute for radio buttons links them together so you can only choose one -->
+  
+  <input type=color> <!-- color picker -->
+  <input type=submit value=Button!> 
+</form>
+
+<form method="post">
+    <!-- get shows everything in the URL, post will not. Post just shows in in the network. Anything with a name attribute will be sent to your network (post) or be in the URL (get). Don't use a get request for pws because URLs are never private-->
+  
+</form>
+
+  </body>
+</html>

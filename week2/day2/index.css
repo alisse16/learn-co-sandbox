@@ -1,0 +1,42 @@
+/* CSS= Cascading style sheets
+So they are changed in the order received--this means that HTML style tags will override CSS bc it's last*/
+
+/* CSS goes in ORDER: style then class then id */
+h3 {
+  color: red;
+}
+/* below is a class--it will look for this class attribute */ 
+.red {
+  color: red;
+}
+/* this is an id tag */
+#blue {
+  color: blue;
+}
+
+/*this is how to override and make this rule get around the hierarchy */
+.red {
+  color: red; !important
+}
+
+/* you can also do a bunch at once */ 
+h1, h2 {
+  color: #42d9f4;
+}
+
+/*CSS Box = SPACING
+Margin: spacing between container
+ - if your margin bottom that intersects margin top, they combine
+border: the boundary of my container
+padding: spacing inside my container*/
+h5 {
+  color: red;
+  background: blue;
+  margin: 4;
+  padding-top: 16px; /* this can also be written as padding: 16px 15px 16px 14px (goes clockwise) */
+  padding-bottom: 16px;
+  padding-left: 14px;
+  padding-right: 15px;
+  border: 7px solid black;
+  border-radius: 5px; /*if you write this in % instead, you can make the whole box eliptical */
+}
